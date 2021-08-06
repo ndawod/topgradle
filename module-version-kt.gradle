@@ -22,6 +22,19 @@
  * SOFTWARE.
  */
 
+apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:1.0.1'
+    }
+}
+
 /**
  * A task to create a ModuleVersion.kt file in the main source directory of the module.
  * The resulting ModuleVersion.kt file should be pushed to git repo.
@@ -38,8 +51,6 @@ task generateVersionKtSource {
         }
         srcFile.write("""// AUTO-GENERATED; DO NOT EDIT BUT DO PUSH TO REPO!
 
-@file:Suppress("unused")
-
 package ${project.group}
 
 /**
@@ -50,5 +61,13 @@ const val MODULE_VERSION: String = "$project.version"
     }
 }
 
+// When building the project, the ModuleVersion.kt file will be created.
 compileJava.dependsOn generateVersionKtSource
 compileKotlin.dependsOn generateVersionKtSource
+
+// After syncing the project in the IDE, the ModuleVersion.kt file will be created.
+idea.project.settings {
+    taskTriggers {
+        afterSync tasks.getByName("generateVersionKtSource")
+    }
+}
