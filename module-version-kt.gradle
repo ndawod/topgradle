@@ -22,8 +22,6 @@
  * SOFTWARE.
  */
 
-apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
-
 buildscript {
     repositories {
         maven {
@@ -34,6 +32,8 @@ buildscript {
         classpath 'gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:1.0.1'
     }
 }
+
+apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
 
 /**
  * A task to create a ModuleVersion.kt file in the main source directory of the module.
@@ -68,6 +68,6 @@ compileKotlin.dependsOn generateVersionKtSource
 // After syncing the project in the IDE, the ModuleVersion.kt file will be created.
 idea.project.settings {
     taskTriggers {
-        afterSync tasks.getByName("generateVersionKtSource")
+        afterSync tasks.getByName('generateVersionKtSource')
     }
 }
