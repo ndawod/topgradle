@@ -23,7 +23,8 @@
  */
 
 /*
- * Be sure to augment the main Gradle build file:
+ * To create the ModuleVersion.kt after a sync operation in IntelliJ IDEs, you can add
+ * the following to the relevant Gradle build files:
  *
  * buildscript {
  *   repositories {
@@ -35,8 +36,16 @@
  *   dependencies {
  *     classpath "gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:${versions.plugin_idea_gradle}"
  *   }
+ * }
+ *
+ * apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
+ *
+ * idea.project.settings {
+ *     taskTriggers {
+ *         afterSync tasks.getByName('generateVersionKtSource')
+ *     }
+ * }
  */
-apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
 
 /**
  * A task to create a ModuleVersion.kt file in the main source directory of the module.
@@ -67,10 +76,3 @@ const val MODULE_VERSION: String = "$project.version"
 // When building the project, the ModuleVersion.kt file will be created.
 compileJava.dependsOn generateVersionKtSource
 compileKotlin.dependsOn generateVersionKtSource
-
-// After syncing the project in the IDE, the ModuleVersion.kt file will be created.
-idea.project.settings {
-    taskTriggers {
-        afterSync tasks.getByName('generateVersionKtSource')
-    }
-}

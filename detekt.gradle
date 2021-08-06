@@ -35,6 +35,7 @@
  *   dependencies {
  *     classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${versions.plugin_detekt}"
  *   }
+ * }
  */
 apply plugin: 'io.gitlab.arturbosch.detekt'
 
