@@ -68,6 +68,7 @@ package ${project.group}
 /**
  * Module version as auto-configured by Gradle.
  */
+@Suppress("unused")
 const val MODULE_VERSION: String = "$project.version"
 """)
     }
