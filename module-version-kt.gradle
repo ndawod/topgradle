@@ -24,7 +24,9 @@
 
 /*
  * To create the ModuleVersion.kt after a sync operation in IntelliJ IDEs, you can add
- * the following to the relevant Gradle build files:
+ * the following to the main Gradle build files:
+ *
+ * apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
  *
  * buildscript {
  *   repositories {
@@ -38,7 +40,7 @@
  *   }
  * }
  *
- * apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
+ * And then add the following to the module's Gradle build file:
  *
  * idea.project.settings {
  *     taskTriggers {
@@ -52,11 +54,11 @@
  * The resulting ModuleVersion.kt file should be pushed to git repo.
  */
 task generateVersionKtSource {
-    def outputDir = file("$buildDir/../src/main/kotlin")
+    final File outputDir = file("$buildDir/../src/main/kotlin")
     outputs.dir outputDir
     doFirst {
-        def projectGroupDir = project.group.toString().replace('.', '/')
-        def srcFile = new File(outputDir, "$projectGroupDir/ModuleVersion.kt")
+        final projectGroupDir = project.group.toString().replace('.', '/')
+        final srcFile = new File(outputDir, "$projectGroupDir/ModuleVersion.kt")
         srcFile.parentFile.mkdirs()
         if (!srcFile.parentFile.isDirectory()) {
             throw new RuntimeException("Unable to create directory: $outputDir")
