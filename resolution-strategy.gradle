@@ -48,7 +48,6 @@ allprojects {
                             }
                         } else if (moduleVersion != '+' && version != moduleVersion) {
                             force "$module:$version"
-                            System.out.println("Enforcing dependency '$module' version '$version' (old version: '$moduleVersion')")
                         }
                     }
                 }
