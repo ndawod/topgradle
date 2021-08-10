@@ -23,7 +23,7 @@
  */
 
 // The version of this module, usually the tag name.
-final _current_version = '1.0.7'
+final _current_version = '1.0.8'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
