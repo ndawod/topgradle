@@ -25,16 +25,12 @@
 if (null == project.versions || null == project.versions.jdk) {
     System.out.println('Script idea-ext.gradle is not loaded because config.gradle is not loaded.')
 } else {
-    apply plugin: 'org.jetbrains.gradle.plugin.idea-ext'
-
-    buildscript {
-        repositories {
-            maven {
-                url "https://plugins.gradle.org/m2/"
-            }
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
         }
-        dependencies {
-            classpath "gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:${project.versions.plugin_idea_gradle}"
-        }
+    }
+    dependencies {
+        classpath "gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:${project.versions.plugin_idea_gradle}"
     }
 }
