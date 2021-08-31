@@ -1,6 +1,6 @@
 .idea/
-gradle/
+gradle/*
+!gradle/wrapper
 .gradle/
 build/
 gen/
-gradlew*

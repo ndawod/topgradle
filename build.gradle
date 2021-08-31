@@ -23,5 +23,42 @@
  */
 
 group = 'org.noordawod.topgradle'
-version = '1.0.6'
+version = '1.1.0'
 description = 'A collection of Gradle configuration files and scripts.'
+
+apply from: 'config.gradle'
+
+apply plugin: 'java'
+apply plugin: 'com.github.ben-manes.versions'
+
+buildscript {
+    apply from: 'config.gradle'
+
+    repositories {
+        mavenCentral()
+        google()
+        gradlePluginPortal()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    dependencies {
+        classpath "com.github.ben-manes:gradle-versions-plugin:${versions.plugin_versions_outdated}"
+    }
+}
+
+repositories {
+    mavenCentral()
+    google()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    // noinspection GroovyAssignabilityCheck
+    overrides.each {
+        project.dependencies.add('implementation', "${it.key}:${it.value}")
+    }
+}
