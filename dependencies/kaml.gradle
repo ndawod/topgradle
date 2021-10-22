@@ -27,5 +27,6 @@ if (null == project.versions || null == project.versions.jdk) {
 } else {
     dependencies {
         implementation "com.charleskorn.kaml:kaml:${project.versions.kaml}"
+        implementation "org.snakeyaml:snakeyaml-engine:${project.versions.snakeyaml_engine}"
     }
 }
