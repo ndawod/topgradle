@@ -23,7 +23,7 @@
  */
 
 // The version of this module, usually the tag name.
-final _current_version = '1.2.0'
+final _current_version = '1.2.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -79,7 +79,7 @@ final _versions = [
     google_oauth_client        : '1.32.1',
     google_protobuf_java       : '4.0.0-rc-2',
     htmlcompressor             : '1.5.2',
-    icu4j                      : '69.1',
+    icu4j                      : '70.1',
     io_grpc                    : '1.42.1',
     io_opencensus_http         : '0.28.3',
     jackson                    : '2.13.0',
@@ -152,6 +152,8 @@ final _overrides = [
     'com.google.j2objc:j2objc-annotations'                      : _versions.google_j2objc,
     'com.google.oauth-client:google-oauth-client'               : _versions.google_oauth_client,
     'com.google.protobuf:protobuf-java'                         : _versions.google_protobuf_java,
+    'com.googlecode.htmlcompressor:htmlcompressor'              : _versions.htmlcompressor,
+    'com.ibm.icu:icu4j'                                         : _versions.icu4j,
     'com.j256.ormlite:ormlite-core'                             : _versions.ormlite_core,
     'com.j256.ormlite:ormlite-jdbc'                             : _versions.ormlite_jdbc,
     'com.jayway.jsonpath:json-path'                             : _versions.jsonpath,
