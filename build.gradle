@@ -23,7 +23,7 @@
  */
 
 group = 'org.noordawod.topgradle'
-version = '1.2.3'
+version = '1.2.4'
 description = 'A collection of Gradle configuration files and scripts.'
 
 apply from: 'config.gradle'
