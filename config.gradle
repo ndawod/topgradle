@@ -23,7 +23,7 @@
  */
 
 // The version of this module, usually the tag name.
-final _current_version = '1.3.0'
+final _current_version = '1.3.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -101,7 +101,7 @@ final _versions = [
     moquette                   : '0.12.1',
     mysql                      : '8.0.28',
     ndawod_kotlin_core         : '2.6.0',
-    ndawod_kotlin_orm          : '1.6.0',
+    ndawod_kotlin_orm          : '1.6.1',
     ndawod_kotlin_restful      : '2.4.0',
     networknt_core             : '2.0.32',
     networknt_validator        : '1.1.8',
