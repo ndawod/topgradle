@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-group = 'org.noordawod.topgradle'
-version = '1.5.2'
+group = 'org.noordawod'
+version = '1.6.0'
 description = 'A collection of Gradle configuration files and scripts.'
 buildDir = "build"
 
