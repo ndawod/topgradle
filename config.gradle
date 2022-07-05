@@ -22,7 +22,8 @@
  * SOFTWARE.
  */
 
-apply from: 'version.gradle'
+// The version of this module, usually the tag name.
+final _current_version = '1.6.3'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -36,8 +37,8 @@ final _ormlite_version = '6.1'
 // To show outdated versions: sh gradlew dependencyUpdates
 final _versions = [
     jdk                        : JavaVersion.VERSION_1_8,
-    topgradle                  : projectVersion,
-    topgradle_url              : "https://raw.githubusercontent.com/ndawod/topgradle/$projectVersion",
+    topgradle                  : _current_version,
+    topgradle_url              : "https://raw.githubusercontent.com/ndawod/topgradle/$_current_version",
 
     // Plugins.
     plugin_shadow              : '6.1.0',

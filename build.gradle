@@ -22,10 +22,8 @@
  * SOFTWARE.
  */
 
-apply from: 'version.gradle'
-
 group = 'org.noordawod'
-version = projectVersion
+version = '1.6.3'
 description = 'A collection of Gradle configuration files and scripts.'
 buildDir = "build"
 
