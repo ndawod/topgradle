@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2021 Fineswap
+ * Copyright (c) 2022 Noor Dawod
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@
  */
 
 // The version of this module, usually the tag name.
-final _current_version = '1.6.0'
+final _current_version = '1.6.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -141,6 +141,9 @@ final _overrides = [
     'com.fasterxml.jackson.datatype:jackson-datatype-joda'      : _versions.jackson,
     'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'    : _versions.jackson,
     'com.fasterxml.jackson:jackson-bom'                         : _versions.jackson_bom,
+    'com.github.ndawod:kotlin-core'                             : _versions.ndawod_kotlin_core,
+    'com.github.ndawod:kotlin-orm'                              : _versions.ndawod_kotlin_orm,
+    'com.github.ndawod:kotlin-restful'                          : _versions.ndawod_kotlin_restful,
     'com.google.api:api-common'                                 : _versions.google_api_common,
     'com.google.api-client:google-api-client'                   : _versions.google_api_client,
     'com.google.auto.value:auto-value-annotations'              : _versions.google_auto_value,

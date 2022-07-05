@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2021 Fineswap
+ * Copyright (c) 2022 Noor Dawod
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -35,19 +35,19 @@ allprojects {
                     eachDependency { DependencyResolveDetails details ->
                         final module = details.requested.module.toString()
                         final moduleVersion = details.requested.version
-                        final version = gradle.overrides[module]
+                        final forcedVersion = gradle.overrides[module]
 
-                        if (null == version) {
+                        if (null == forcedVersion) {
                             def otherVersion = conflictingVersions[module]
-                            if (moduleVersion != '+' && null == otherVersion) {
+                            if ('+' != moduleVersion && null == otherVersion) {
                                 conflictingVersions[module] = moduleVersion
-                            } else if (moduleVersion != '+' && otherVersion != moduleVersion) {
+                            } else if ('+' != moduleVersion && otherVersion != moduleVersion) {
                                 System.out.println("POSSIBLE CONFLICTING VERSION FOR '$module'")
                                 System.out.println("- VERSION 1: $otherVersion")
                                 System.out.println("- VERSION 2: $moduleVersion")
                             }
-                        } else if (moduleVersion != '+' && version != moduleVersion) {
-                            force "$module:$version"
+                        } else if ('+' != moduleVersion && forcedVersion != moduleVersion) {
+                            force "$module:$forcedVersion"
                         }
                     }
                 }
