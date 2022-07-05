@@ -22,8 +22,7 @@
  * SOFTWARE.
  */
 
-// The version of this module, usually the tag name.
-final _current_version = '1.6.1'
+apply from: 'version.gradle'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -37,8 +36,8 @@ final _ormlite_version = '6.1'
 // To show outdated versions: sh gradlew dependencyUpdates
 final _versions = [
     jdk                        : JavaVersion.VERSION_1_8,
-    topgradle                  : _current_version,
-    topgradle_url              : "https://raw.githubusercontent.com/ndawod/topgradle/$_current_version",
+    topgradle                  : projectVersion,
+    topgradle_url              : "https://raw.githubusercontent.com/ndawod/topgradle/$projectVersion",
 
     // Plugins.
     plugin_shadow              : '6.1.0',
@@ -151,6 +150,7 @@ final _overrides = [
     'com.google.code.gson:gson'                                 : _versions.google_gson,
     'com.google.dagger:dagger'                                  : _versions.dagger,
     'com.google.dagger:dagger-compiler'                         : _versions.dagger,
+    'com.google.dagger:dagger-spi'                              : _versions.dagger,
     'com.google.devtools.ksp:symbol-processing-api'             : _versions.google_ksp,
     'com.google.errorprone:error_prone_annotations'             : _versions.google_errorprone,
     'com.google.guava:guava'                                    : _versions.google_guava,

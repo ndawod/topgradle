@@ -22,46 +22,4 @@
  * SOFTWARE.
  */
 
-apply from: 'version.gradle'
-
-group = 'org.noordawod'
-version = projectVersion
-description = 'A collection of Gradle configuration files and scripts.'
-buildDir = "build"
-
-apply from: 'config.gradle'
-
-apply plugin: 'java'
-apply plugin: 'com.github.ben-manes.versions'
-
-buildscript {
-    apply from: 'config.gradle'
-
-    repositories {
-        mavenCentral()
-        google()
-        gradlePluginPortal()
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-
-    dependencies {
-        classpath "com.github.ben-manes:gradle-versions-plugin:${versions.plugin_versions_outdated}"
-    }
-}
-
-repositories {
-    mavenCentral()
-    google()
-    maven {
-        url 'https://jitpack.io'
-    }
-}
-
-dependencies {
-    // noinspection GroovyAssignabilityCheck
-    overrides.each {
-        project.dependencies.add('implementation', "${it.key}:${it.value}")
-    }
-}
+ext.projectVersion = '1.6.2'
