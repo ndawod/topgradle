@@ -53,19 +53,7 @@ const val PROJECT_VERSION: String = "$project.version"
 }
 
 // When building the project, the ProjectVersion.kt file will be created.
-compileJava.dependsOn {
-    doFirst {
-        project.generateProjectVersionKtSource()
-    }
-}
-compileKotlin.dependsOn {
-    doFirst {
-        project.generateProjectVersionKtSource()
-    }
-}
-classes.dependsOn {
-    doFirst {
-        project.generateProjectVersionKtSource()
-    }
-}
+compileJava.dependsOn(project.generateProjectVersionKtSource)
+compileKotlin.dependsOn(project.generateProjectVersionKtSource)
+classes.dependsOn(project.generateProjectVersionKtSource)
 allprojects { project.generateProjectVersionKtSource() }
