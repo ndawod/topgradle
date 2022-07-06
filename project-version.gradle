@@ -27,7 +27,7 @@
  * The resulting ProjectVersion.kt file should be pushed to git repo.
  */
 project.ext.generateProjectVersionKtSource = {
-    def outputDir = (new File("$buildDir/../src/main/kotlin")).absoluteFile
+    def outputDir = (new File("$buildDir/../src/main/kotlin")).canonicalFile
     def projectGroupDir = project.group.toString().replace('.', '/')
     def srcFile = new File(outputDir, "$projectGroupDir/ProjectVersion.kt")
     def parentDir = srcFile.parentFile
@@ -44,7 +44,7 @@ project.ext.generateProjectVersionKtSource = {
 package ${project.group}
 
 /**
- * Project `${project.group}:${rootProject.name}` version: ${project.version}
+ * Project `${project.group}` version: ${project.version}
  */
 const val PROJECT_VERSION: String = "$project.version"
 """
