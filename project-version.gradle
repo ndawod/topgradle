@@ -44,7 +44,7 @@ project.ext.generateProjectVersionKtSource = {
 package ${project.group}
 
 /**
- * Project `${project.group}` version: ${project.version}
+ * Project `${project.group}` version: ${project.version}.
  */
 const val PROJECT_VERSION: String = "$project.version"
 """
