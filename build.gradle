@@ -23,9 +23,9 @@
  */
 
 group = 'org.noordawod'
-version = '1.6.12'
+version = '1.6.13'
 description = 'A collection of Gradle configuration files and scripts.'
-buildDir = "build"
+buildDir = 'build'
 
 apply from: 'config.gradle'
 
@@ -40,29 +40,27 @@ buildscript {
         google()
         gradlePluginPortal()
         maven {
-            url "https://plugins.gradle.org/m2/"
+            url 'https://plugins.gradle.org/m2/'
         }
     }
 
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.plugin_kotlin}"
-        classpath "org.jetbrains.kotlin:kotlin-serialization:${versions.plugin_kotlin}"
-        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${versions.plugin_detekt}"
-        classpath "com.github.ben-manes:gradle-versions-plugin:${versions.plugin_versions_outdated}"
-        classpath "com.github.jengelman.gradle.plugins:shadow:${versions.plugin_shadow}"
+        classpaths.each {
+            project.buildscript.dependencies.add('classpath', "${it.key}:${it.value}")
+        }
     }
 }
 
 repositories {
     mavenCentral()
     google()
+    gradlePluginPortal()
     maven {
         url 'https://jitpack.io'
     }
 }
 
 dependencies {
-    // noinspection GroovyAssignabilityCheck
     overrides.each {
         project.dependencies.add('implementation', "${it.key}:${it.value}")
     }

@@ -29,7 +29,7 @@
 
 apply plugin: 'java'
 
-def _jdk_version = '1.8'
+def _jdk_version = JavaVersion.VERSION_11
 
 if (null != project.versions && null != project.versions.jdk) {
     _jdk_version = project.versions.jdk

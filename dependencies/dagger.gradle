@@ -26,7 +26,7 @@ if (null == project.versions || null == project.versions.jdk) {
     System.out.println('Script dagger.gradle is not loaded because config.gradle is not loaded.')
 } else {
     dependencies {
-        implementation "javax.inject:javax.inject:1"
+        implementation 'javax.inject:javax.inject:1'
         implementation "com.google.dagger:dagger-spi:${project.versions.dagger}"
         kapt "com.google.dagger:dagger-compiler:${project.versions.dagger}"
     }

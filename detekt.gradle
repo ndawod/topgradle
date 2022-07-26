@@ -37,6 +37,7 @@
  *   }
  * }
  */
+
 apply plugin: 'io.gitlab.arturbosch.detekt'
 
 detekt {
@@ -50,5 +51,5 @@ detekt {
 
 dependencies {
     detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:${project.versions.plugin_detekt}"
-    detekt "io.gitlab.arturbosch.detekt:detekt-cli:${project.versions.detekt}"
+    detekt "io.gitlab.arturbosch.detekt:detekt-cli:${project.versions.plugin_detekt}"
 }

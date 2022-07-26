@@ -23,12 +23,12 @@
  */
 
 // The version of this module, usually the tag name.
-final _current_version = '1.6.12'
+final _current_version = '1.6.13'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
 final _kotlin_version = '1.7.10'
-final _detekt_version = '1.20.0'
+final _detekt_version = '1.21.0'
 
 // Rest of the modules.
 final _ormlite_version = '6.1'
@@ -36,7 +36,7 @@ final _ormlite_version = '6.1'
 // Versions of 3rd party libraries.
 // To show outdated versions: sh gradlew dependencyUpdates
 final _versions = [
-    jdk                        : JavaVersion.VERSION_1_8,
+    jdk                        : JavaVersion.VERSION_11,
     topgradle                  : _current_version,
     topgradle_url              : "https://raw.githubusercontent.com/ndawod/topgradle/$_current_version",
 
@@ -61,7 +61,6 @@ final _versions = [
     commons_codec              : '1.15',
     commons_io                 : '2.11.0',
     dagger                     : '2.43',
-    detekt                     : _detekt_version,
     firebase_admin             : '9.0.0',
     freemarker                 : '2.3.31',
     google_api_client          : '2.0.0',
@@ -97,9 +96,9 @@ final _versions = [
     logback_classic            : '1.3.0-alpha16',
     moquette                   : '0.15',
     mysql                      : '8.0.30',
-    ndawod_kotlin_core         : '2.7.2',
-    ndawod_kotlin_orm          : '1.9.2',
-    ndawod_kotlin_restful      : '2.5.2',
+    ndawod_kotlin_core         : '2.7.3',
+    ndawod_kotlin_orm          : '1.9.3',
+    ndawod_kotlin_restful      : '2.5.3',
     networknt_core             : '2.1.1',
     networknt_validator        : '1.1.8',
     ormlite_core               : _ormlite_version,
@@ -123,7 +122,15 @@ final _versions = [
     zxcvbn                     : '1.7.0',
 ]
 
-final _overrides = [
+final _pluginOverrides = [
+    'org.jetbrains.kotlin:kotlin-gradle-plugin'                 : _versions.plugin_kotlin,
+    'org.jetbrains.kotlin:kotlin-serialization'                 : _versions.plugin_kotlin,
+    'io.gitlab.arturbosch.detekt:detekt-gradle-plugin'          : _versions.plugin_detekt,
+    'com.github.ben-manes:gradle-versions-plugin'               : _versions.plugin_versions_outdated,
+    'com.github.jengelman.gradle.plugins:shadow'                : _versions.plugin_shadow,
+]
+
+final _implOverrides = [
     'ch.qos.logback:logback-classic'                            : _versions.logback_classic,
     'com.auth0:java-jwt'                                        : _versions.auth0_jwt,
     'com.charleskorn.kaml:kaml'                                 : _versions.kaml,
@@ -182,8 +189,6 @@ final _overrides = [
     'com.sun.mail:jakarta.mail'                                 : _versions.jakarta_mail,
     'commons-codec:commons-codec'                               : _versions.commons_codec,
     'commons-io:commons-io'                                     : _versions.commons_io,
-    'io.gitlab.arturbosch.detekt:detekt-cli'                    : _versions.detekt,
-    'io.gitlab.arturbosch.detekt:detekt-formatting'             : _versions.plugin_detekt,
     'io.moquette:moquette-broker'                               : _versions.moquette,
     'io.grpc:grpc-context'                                      : _versions.io_grpc,
     'io.opencensus:opencensus-api'                              : _versions.io_opencensus_http,
@@ -234,7 +239,8 @@ try {
     project.ext {
         encoding = 'UTF-8'
         versions = _versions
-        overrides = _overrides
+        classpaths = _pluginOverrides
+        overrides = _implOverrides
     }
 } catch (Exception ignored) {
     // N/A.
@@ -245,7 +251,8 @@ try {
     gradle.ext {
         encoding = 'UTF-8'
         versions = _versions
-        overrides = _overrides
+        classpaths = _pluginOverrides
+        overrides = _implOverrides
     }
 } catch (Exception ignored) {
     // N/A.
@@ -256,7 +263,8 @@ try {
     ext {
         encoding = 'UTF-8'
         versions = _versions
-        overrides = _overrides
+        classpaths = _pluginOverrides
+        overrides = _implOverrides
     }
 } catch (Exception ignored) {
     // N/A.
