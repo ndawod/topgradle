@@ -23,12 +23,12 @@
  */
 
 // The version of this module, usually the tag name.
-final _current_version = '1.6.11'
+final _current_version = '1.6.12'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
-final _kotlin_version = '1.6.21'
-final _detekt_version = '1.21.0'
+final _kotlin_version = '1.7.10'
+final _detekt_version = '1.20.0'
 
 // Rest of the modules.
 final _ormlite_version = '6.1'
@@ -92,9 +92,8 @@ final _versions = [
     jsonpath                   : '2.7.0',
     kaml                       : '0.46.0',
     kotlin                     : _kotlin_version,
-    kotlin_coroutines          : '1.6.0',
-    kotlin_reflect             : _kotlin_version,
-    kotlin_serialization       : '1.3.2',
+    kotlin_coroutines          : '1.6.3',
+    kotlin_serialization       : '1.3.3',
     logback_classic            : '1.3.0-alpha16',
     moquette                   : '0.15',
     mysql                      : '8.0.30',
@@ -207,7 +206,7 @@ final _overrides = [
     'org.freemarker:freemarker'                                 : _versions.freemarker,
     'org.jboss.logging:jboss-logging'                           : _versions.jboss_logging,
     'org.jboss.threads:jboss-threads'                           : _versions.jboss_threads,
-    'org.jetbrains.kotlin:kotlin-reflect'                       : _versions.kotlin_reflect,
+    'org.jetbrains.kotlin:kotlin-reflect'                       : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-stdlib'                        : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-stdlib-common'                 : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-stdlib-jdk7'                   : _versions.kotlin,
