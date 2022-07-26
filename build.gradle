@@ -45,7 +45,11 @@ buildscript {
     }
 
     dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.plugin_kotlin}"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:${versions.plugin_kotlin}"
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${versions.plugin_detekt}"
         classpath "com.github.ben-manes:gradle-versions-plugin:${versions.plugin_versions_outdated}"
+        classpath "com.github.jengelman.gradle.plugins:shadow:${versions.plugin_shadow}"
     }
 }
 
