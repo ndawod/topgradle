@@ -22,15 +22,15 @@
  * SOFTWARE.
  */
 
-// The version of this module, usually the tag name.
-final _current_version = '1.6.16'
+// The version of this module.
+final _current_version = '1.6.17'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
 final _kotlin_version = '1.7.10'
 final _detekt_version = '1.21.0'
 
-// Rest of the modules.
+// The version of OrmLite.
 final _ormlite_version = '6.1'
 
 // Versions of 3rd party libraries.
@@ -91,14 +91,15 @@ final _versions = [
     kotlin                      : _kotlin_version,
     kotlin_coroutines           : '1.6.3',
     kotlin_datetime             : '0.4.0',
+    kotlin_reflect              : _kotlin_version,
     kotlin_serialization        : '1.3.3',
     ktor                        : '2.0.3',
     logback_classic             : '1.3.0-alpha16',
     moquette                    : '0.15',
     mysql                       : '8.0.30',
-    ndawod_kotlin_core          : '2.7.3',
-    ndawod_kotlin_orm           : '1.9.3',
-    ndawod_kotlin_restful       : '2.5.3',
+    ndawod_kotlin_core          : '2.7.4',
+    ndawod_kotlin_orm           : '1.9.4',
+    ndawod_kotlin_restful       : '2.5.4',
     networknt_core              : '2.1.1',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
@@ -271,7 +272,7 @@ final _implOverrides = [
     'org.freemarker:freemarker'                                                 : _versions.freemarker,
     'org.jboss.logging:jboss-logging'                                           : _versions.jboss_logging,
     'org.jboss.threads:jboss-threads'                                           : _versions.jboss_threads,
-    'org.jetbrains.kotlin:kotlin-reflect'                                       : _versions.kotlin,
+    'org.jetbrains.kotlin:kotlin-reflect'                                       : _versions.kotlin_reflect,
     'org.jetbrains.kotlin:kotlin-stdlib'                                        : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-stdlib-common'                                 : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-stdlib-jdk7'                                   : _versions.kotlin,
