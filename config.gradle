@@ -23,7 +23,7 @@
  */
 
 // The version of this module, usually the tag name.
-final _current_version = '1.6.13'
+final _current_version = '1.6.14'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -45,6 +45,7 @@ final _versions = [
     plugin_detekt              : _detekt_version,
     plugin_versions_outdated   : '0.42.0',
     plugin_shadow              : '6.1.0',
+    plugin_kotlin_atomicfu     : '0.18.2',
 
     // Dependencies.
     aelstad_keccakj            : '1.1.0',
@@ -92,7 +93,9 @@ final _versions = [
     kaml                       : '0.46.0',
     kotlin                     : _kotlin_version,
     kotlin_coroutines          : '1.6.3',
+    kotlin_datetime            : '0.4.0',
     kotlin_serialization       : '1.3.3',
+    ktor                       : '2.0.3',
     logback_classic            : '1.3.0-alpha16',
     moquette                   : '0.15',
     mysql                      : '8.0.30',
@@ -123,11 +126,12 @@ final _versions = [
 ]
 
 final _pluginOverrides = [
-    'org.jetbrains.kotlin:kotlin-gradle-plugin'                 : _versions.plugin_kotlin,
-    'org.jetbrains.kotlin:kotlin-serialization'                 : _versions.plugin_kotlin,
-    'io.gitlab.arturbosch.detekt:detekt-gradle-plugin'          : _versions.plugin_detekt,
     'com.github.ben-manes:gradle-versions-plugin'               : _versions.plugin_versions_outdated,
     'com.github.jengelman.gradle.plugins:shadow'                : _versions.plugin_shadow,
+    'io.gitlab.arturbosch.detekt:detekt-gradle-plugin'          : _versions.plugin_detekt,
+    'org.jetbrains.kotlin:kotlin-gradle-plugin'                 : _versions.plugin_kotlin,
+    'org.jetbrains.kotlin:kotlin-serialization'                 : _versions.plugin_kotlin,
+    'org.jetbrains.kotlinx:atomicfu-gradle-plugin'              : _versions.plugin_kotlin_atomicfu,
 ]
 
 final _implOverrides = [
@@ -191,6 +195,8 @@ final _implOverrides = [
     'commons-io:commons-io'                                     : _versions.commons_io,
     'io.moquette:moquette-broker'                               : _versions.moquette,
     'io.grpc:grpc-context'                                      : _versions.io_grpc,
+    'io.ktor:ktor-client-cio'                                   : _versions.ktor,
+    'io.ktor:ktor-client-core'                                  : _versions.ktor,
     'io.opencensus:opencensus-api'                              : _versions.io_opencensus_http,
     'io.opencensus:opencensus-contrib-http-util'                : _versions.io_opencensus_http,
     'io.sentry:sentry'                                          : _versions.sentry,
@@ -218,6 +224,7 @@ final _implOverrides = [
     'org.jetbrains.kotlin:kotlin-stdlib-jdk8'                   : _versions.kotlin,
     'org.jetbrains.kotlinx:kotlinx-coroutines-core'             : _versions.kotlin_coroutines,
     'org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm'         : _versions.kotlin_coroutines,
+    'org.jetbrains.kotlinx:kotlinx-datetime'                    : _versions.kotlin_datetime,
     'org.jetbrains.kotlinx:kotlinx-serialization-core'          : _versions.kotlin_serialization,
     'org.jetbrains.kotlinx:kotlinx-serialization-core-jvm'      : _versions.kotlin_serialization,
     'org.jetbrains.kotlinx:kotlinx-serialization-json'          : _versions.kotlin_serialization,
