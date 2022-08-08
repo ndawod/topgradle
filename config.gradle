@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '1.7.4'
+final _current_version = '1.7.5'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -109,8 +109,8 @@ final _versions = [
     sentry                      : '6.3.1',
     seruco_base62               : '0.1.3',
     simplemail                  : '7.5.0',
-    slf4j_api                   : '2.0.0-beta0',
-    slf4j_ext                   : '2.0.0-beta0',
+    slf4j_api                   : '2.0.0-beta1',
+    slf4j_ext                   : '2.0.0-beta1',
     snakeyaml                   : '1.30',
     snakeyaml_engine            : '2.3',
     squareup_moshi              : '1.13.0',
