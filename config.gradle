@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '1.8.9'
+final _current_version = '1.9.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
