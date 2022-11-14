@@ -50,6 +50,18 @@ detekt {
 }
 
 dependencies {
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-complexity:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-coroutines:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-documentation:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-empty:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-errorprone:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-exceptions:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-libraries:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-naming:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-performance:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-ruleauthors:${project.versions.plugin_detekt}"
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-rules-style:${project.versions.plugin_detekt}"
     detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:${project.versions.plugin_detekt}"
     detekt "io.gitlab.arturbosch.detekt:detekt-cli:${project.versions.plugin_detekt}"
 }
