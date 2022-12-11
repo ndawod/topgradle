@@ -27,5 +27,6 @@ if (null == project.versions || null == project.versions.jdk) {
 } else {
     dependencies {
         implementation "org.simplejavamail:simple-java-mail:${project.versions.simplemail}"
+        implementation "com.sanctionco.jmail:jmail:${project.versions.jmail}"
     }
 }

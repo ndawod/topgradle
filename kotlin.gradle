@@ -34,12 +34,10 @@ if (null == project.versions || null == project.versions.jdk) {
         includeCompileClasspath = false
     }
 
-    compileKotlin {
-        kotlinOptions.jvmTarget = project.versions.jdk
-    }
-
-    compileTestKotlin {
-        kotlinOptions.jvmTarget = project.versions.jdk
+    kotlin {
+        jvmToolchain {
+            languageVersion.set(JavaLanguageVersion.of("${project.versions.jdk}".toInteger()))
+        }
     }
 
     dependencies {

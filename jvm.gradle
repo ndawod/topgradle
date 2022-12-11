@@ -35,5 +35,8 @@ if (null != project.versions && null != project.versions.jdk) {
     _jdk_version = project.versions.jdk
 }
 
-sourceCompatibility = _jdk_version
-targetCompatibility = _jdk_version
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of("$_jdk_version".toInteger()))
+    }
+}
