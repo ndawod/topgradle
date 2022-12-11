@@ -35,8 +35,16 @@ if (null == project.versions || null == project.versions.jdk) {
     }
 
     kotlin {
+        def _kotlinVersion = "${project.versions.jdk}".toInteger()
+
         jvmToolchain {
-            languageVersion.set(JavaLanguageVersion.of("${project.versions.jdk}".toInteger()))
+            languageVersion.set(JavaLanguageVersion.of(_kotlinVersion))
+        }
+
+        compileKotlin {
+            kotlinOptions {
+                jvmTarget = _kotlinVersion
+            }
         }
     }
 
