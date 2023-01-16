@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '3.0.10'
+final _current_version = '3.0.11'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -68,7 +68,7 @@ final _versions = [
     dagger                      : '2.44.2',
     jcolor                      : '5.5.1',
     firebase_admin              : '9.1.1',
-    freemarker                  : '2.3.31',
+    freemarker                  : '2.3.32',
     google_api_client           : '2.1.2',
     google_api_common           : '2.4.0',
     google_auto_value           : '1.10.1',
@@ -83,7 +83,7 @@ final _versions = [
     google_protobuf_java        : '4.0.0-rc-2',
     htmlcompressor              : '1.5.2',
     icu4j                       : '72.1',
-    io_grpc                     : '1.51.1',
+    io_grpc                     : '1.52.1',
     io_opencensus_http          : '0.31.1',
     jackson                     : '2.14.1',
     jakarta_mail                : '2.0.1',
@@ -101,9 +101,9 @@ final _versions = [
     logback_classic             : '1.4.5',
     moquette                    : '0.16',
     mysql                       : '8.0.31',
-    ndawod_kotlin_core          : '3.1.4',
-    ndawod_kotlin_orm           : '4.0.10',
-    ndawod_kotlin_restful       : '4.0.2',
+    ndawod_kotlin_core          : '3.1.5',
+    ndawod_kotlin_orm           : '4.0.11',
+    ndawod_kotlin_restful       : '4.0.3',
     networknt_core              : '2.1.5',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
