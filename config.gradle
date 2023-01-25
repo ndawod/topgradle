@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '3.2.0'
+final _current_version = '3.2.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -100,9 +100,9 @@ final _versions = [
     logback_classic             : '1.4.5',
     moquette                    : '0.16',
     mysql                       : '8.0.32',
-    ndawod_kotlin_core          : '3.2.0',
-    ndawod_kotlin_orm           : '4.1.0',
-    ndawod_kotlin_restful       : '4.1.0',
+    ndawod_kotlin_core          : '3.2.1',
+    ndawod_kotlin_orm           : '4.1.1',
+    ndawod_kotlin_restful       : '4.1.1',
     networknt_core              : '2.1.5',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
@@ -111,7 +111,7 @@ final _versions = [
     pac4j                       : '5.1.5',
     sentry                      : '6.12.1',
     seruco_base62               : '0.1.3',
-    simplemail                  : '7.7.1',
+    simplemail                  : '7.8.0',
     slf4j_api                   : '2.0.6',
     slf4j_ext                   : '2.0.6',
     snakeyaml                   : '1.33',
