@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2022 Noor Dawod
+ * Copyright (c) 2023 Noor Dawod
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '3.2.3'
+final _current_version = '3.3.0'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -43,7 +43,7 @@ final _versions = [
     // Plugins.
     plugin_kotlin               : _kotlin_version,
     plugin_detekt               : _detekt_version,
-    plugin_versions_outdated    : '0.45.0',
+    plugin_versions_outdated    : '0.46.0',
     plugin_shadow               : '6.1.0',
 
     // TODO(noor): Only upgrade when changing to Kotlin 1.8.0.
@@ -58,31 +58,31 @@ final _versions = [
     apache_httpclient5          : '5.2.1',
     apache_httpclient_core      : '4.4.16',
     apache_imaging              : '1.0-alpha3',
-    auth0_jwt                   : '4.2.2',
-    b_c_jose4j                  : '0.9.2',
+    auth0_jwt                   : '4.3.0',
+    b_c_jose4j                  : '0.9.3',
     checker_compat_qual         : '2.5.5',
-    checker_qual                : '3.30.0',
+    checker_qual                : '3.32.0',
     commons_codec               : '1.15',
     commons_io                  : '2.11.0',
-    dagger                      : '2.44.2',
+    dagger                      : '2.45',
     jcolor                      : '5.5.1',
     firebase_admin              : '9.1.1',
     freemarker                  : '2.3.32',
     google_api_client           : '2.2.0',
-    google_api_common           : '2.6.0',
+    google_api_common           : '2.6.2',
     google_auto_value           : '1.10.1',
     google_errorprone           : '2.18.0',
     google_findbugs             : '3.0.2',
     google_gson                 : '2.10.1',
     google_guava                : '31.1-jre',
-    google_httpclient           : '1.42.3',
+    google_httpclient           : '1.43.0',
     google_j2objc               : '2.8',
-    google_ksp                  : '1.8.10-1.0.9',
+    google_ksp                  : '1.8.20-Beta-1.0.9',
     google_oauth_client         : '1.34.1',
     google_protobuf_java        : '4.0.0-rc-2',
     htmlcompressor              : '1.5.2',
     icu4j                       : '72.1',
-    io_grpc                     : '1.52.1',
+    io_grpc                     : '1.53.0',
     io_opencensus_http          : '0.31.1',
     jackson                     : '2.14.2',
     jakarta_mail                : '2.0.1',
@@ -90,38 +90,38 @@ final _versions = [
     jboss_threads               : '3.5.0.Final',
     jmail                       : '1.4.1',
     jsonpath                    : '2.7.0',
-    kaml                        : '0.51.0',
+    kaml                        : '0.52.0',
     kotlin                      : _kotlin_version,
     kotlin_coroutines           : '1.6.4',
     kotlin_datetime             : '0.4.0',
     kotlin_reflect              : _kotlin_version,
-    kotlin_serialization        : '1.4.1',
-    ktor                        : '2.2.3',
+    kotlin_serialization        : '1.5.0',
+    ktor                        : '2.2.4',
     logback_classic             : '1.4.5',
     moquette                    : '0.16',
     mysql                       : '8.0.32',
-    ndawod_kotlin_core          : '3.2.2',
-    ndawod_kotlin_orm           : '4.2.0',
-    ndawod_kotlin_restful       : '4.1.2',
-    networknt_core              : '2.1.6',
+    ndawod_kotlin_core          : '3.3.1',
+    ndawod_kotlin_orm           : '4.3.0',
+    ndawod_kotlin_restful       : '4.2.0',
+    networknt_core              : '2.1.8',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
     ormlite_jdbc                : _ormlite_version,
     owasp_encoder               : '1.2.3',
     pac4j                       : '5.1.5',
-    sentry                      : '6.13.1',
+    sentry                      : '6.16.0-beta.1',
     seruco_base62               : '0.1.3',
-    simplemail                  : '7.8.1',
+    simplemail                  : '7.9.1',
     slf4j_api                   : '2.0.6',
     slf4j_ext                   : '2.0.6',
-    snakeyaml                   : '1.33',
+    snakeyaml                   : '2.0',
     snakeyaml_engine            : '2.6',
     squareup_moshi              : '1.14.0',
     squareup_okhttp3            : '5.0.0-alpha.11',
     squareup_okio               : '3.3.0',
     swagger_annotations         : '2.0.0-rc2',
     trbl_blurhash               : '1.0.0',
-    undertow                    : '2.3.3.Final',
+    undertow                    : '2.3.4.Final',
     wildfly                     : '1.6.0.Final',
     zxcvbn                      : '1.7.0',
 ]
