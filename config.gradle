@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '3.3.0'
+final _current_version = '3.3.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -77,7 +77,7 @@ final _versions = [
     google_guava                : '31.1-jre',
     google_httpclient           : '1.43.0',
     google_j2objc               : '2.8',
-    google_ksp                  : '1.8.20-Beta-1.0.9',
+    google_ksp                  : '1.8.20-RC-1.0.9',
     google_oauth_client         : '1.34.1',
     google_protobuf_java        : '4.0.0-rc-2',
     htmlcompressor              : '1.5.2',
@@ -102,7 +102,7 @@ final _versions = [
     mysql                       : '8.0.32',
     ndawod_kotlin_core          : '3.3.1',
     ndawod_kotlin_orm           : '4.3.0',
-    ndawod_kotlin_restful       : '4.2.0',
+    ndawod_kotlin_restful       : '4.2.1',
     networknt_core              : '2.1.8',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
@@ -111,7 +111,7 @@ final _versions = [
     pac4j                       : '5.1.5',
     sentry                      : '6.16.0-beta.1',
     seruco_base62               : '0.1.3',
-    simplemail                  : '7.9.1',
+    simplemail                  : '8.0.0',
     slf4j_api                   : '2.0.6',
     slf4j_ext                   : '2.0.6',
     snakeyaml                   : '2.0',
