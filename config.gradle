@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '3.5.2'
+final _current_version = '3.5.3'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -61,7 +61,7 @@ final _versions = [
     auth0_jwt                   : '4.4.0',
     b_c_jose4j                  : '0.9.3',
     checker_compat_qual         : '2.5.5',
-    checker_qual                : '3.33.0',
+    checker_qual                : '3.34.0',
     commons_codec               : '1.15',
     commons_io                  : '2.11.0',
     dagger                      : '2.46',
@@ -101,7 +101,7 @@ final _versions = [
     moquette                    : '0.16',
     mysql                       : '8.0.33',
     ndawod_kotlin_core          : '3.4.1',
-    ndawod_kotlin_orm           : '4.6.0',
+    ndawod_kotlin_orm           : '4.7.0',
     ndawod_kotlin_restful       : '4.3.3',
     networknt_core              : '2.1.16',
     networknt_validator         : '1.1.8',
