@@ -23,11 +23,11 @@
  */
 
 // The version of this module.
-final _current_version = '3.6.1'
+final _current_version = '3.6.2'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
-final _kotlin_version = '1.7.21'
+final _kotlin_version = '1.8.21'
 final _detekt_version = '1.22.0'
 
 // The version of OrmLite.
@@ -90,6 +90,7 @@ final _versions = [
     jsonpath                    : '2.8.0',
     kaml                        : '0.53.0',
     kotlin                      : _kotlin_version,
+    kotlin_annotations          : '23.0.0',
     kotlin_coroutines           : '1.7.1',
     kotlin_datetime             : '0.4.0',
     kotlin_reflect              : _kotlin_version,
@@ -274,6 +275,7 @@ final _implOverrides = [
     'org.freemarker:freemarker'                                                 : _versions.freemarker,
     'org.jboss.logging:jboss-logging'                                           : _versions.jboss_logging,
     'org.jboss.threads:jboss-threads'                                           : _versions.jboss_threads,
+    'org.jetbrains:annotations'                                                 : _versions.kotlin_annotations,
     'org.jetbrains.kotlin:kotlin-reflect'                                       : _versions.kotlin_reflect,
     'org.jetbrains.kotlin:kotlin-stdlib'                                        : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-stdlib-common'                                 : _versions.kotlin,
