@@ -23,7 +23,7 @@
  */
 
 // The version of this module.
-final _current_version = '3.7.0'
+final _current_version = '3.7.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -100,7 +100,7 @@ final _versions = [
     moquette                    : '0.16',
     mysql                       : '8.0.33',
     ndawod_kotlin_core          : '3.5.3',
-    ndawod_kotlin_orm           : '4.9.1',
+    ndawod_kotlin_orm           : '4.9.2',
     ndawod_kotlin_restful       : '4.4.3',
     networknt_core              : '2.1.18',
     networknt_validator         : '1.1.8',
