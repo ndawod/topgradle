@@ -23,7 +23,7 @@
  */
 
 group = 'org.noordawod'
-version = '3.8.5'
+version = '3.8.6'
 description = 'A collection of Gradle configuration files and scripts.'
 buildDir = 'build'
 
