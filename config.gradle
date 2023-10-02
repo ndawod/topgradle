@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '3.8.7'
+final _current_version = '3.8.8'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -52,8 +52,8 @@ final _versions = [
     apache_collections4         : '4.4',
     apache_commons_lang3        : '3.13.0',
     apache_httpclient           : '4.5.14',
-    apache_httpclient5          : '5.2.1',
     apache_httpclient_core      : '4.4.16',
+    apache_httpclient5          : '5.2.1',
     apache_imaging              : '1.0-alpha3',
     auth0_jwt                   : '4.4.0',
     b_c_jose4j                  : '0.9.3',
@@ -67,9 +67,9 @@ final _versions = [
     firebase_admin              : '9.2.0',
     freemarker                  : '2.3.32',
     google_api_client           : '2.2.0',
-    google_api_common           : '2.16.0',
+    google_api_common           : '2.17.1',
     google_auto_value           : '1.10.4',
-    google_errorprone           : '2.21.1',
+    google_errorprone           : '2.22.0',
     google_findbugs             : '3.0.2',
     google_gson                 : '2.10.1',
     google_guava                : '32.1.2-jre',
@@ -85,7 +85,7 @@ final _versions = [
     jackson                     : '2.15.2',
     jakarta_mail                : '2.0.1',
     jboss_logging               : '3.5.3.Final',
-    jboss_threads               : '3.5.0.Final',
+    jboss_threads               : '3.5.1.Final',
     jmail                       : '1.6.0',
     jsonpath                    : '2.8.0',
     kaml                        : '0.55.0',
@@ -99,9 +99,9 @@ final _versions = [
     logback_classic             : '1.4.11',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '3.5.10',
-    ndawod_kotlin_orm           : '4.10.5',
-    ndawod_kotlin_restful       : '4.4.11',
+    ndawod_kotlin_core          : '3.5.11',
+    ndawod_kotlin_orm           : '4.10.6',
+    ndawod_kotlin_restful       : '4.4.12',
     networknt_core              : '2.1.26',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
@@ -117,7 +117,7 @@ final _versions = [
     snakeyaml_engine            : '2.7',
     squareup_moshi              : '1.15.0',
     squareup_okhttp3            : '5.0.0-alpha.11',
-    squareup_okio               : '3.5.0',
+    squareup_okio               : '3.6.0',
     swagger_annotations         : '2.0.0-rc2',
     trbl_blurhash               : '1.0.0',
     undertow                    : '2.3.8.Final',
@@ -266,6 +266,8 @@ final _implOverrides = [
     'org.apache.commons:commons-imaging'                                        : _versions.apache_imaging,
     'org.apache.commons:commons-lang3'                                          : _versions.apache_commons_lang3,
     'org.apache.httpcomponents.client5:httpclient5'                             : _versions.apache_httpclient5,
+    'org.apache.httpcomponents.client5:httpclient5-cache'                       : _versions.apache_httpclient5,
+    'org.apache.httpcomponents.client5:httpclient5-fluent'                      : _versions.apache_httpclient5,
     'org.apache.httpcomponents:httpclient'                                      : _versions.apache_httpclient,
     'org.apache.httpcomponents:httpcore'                                        : _versions.apache_httpclient_core,
     'org.bitbucket.b_c:jose4j'                                                  : _versions.b_c_jose4j,
