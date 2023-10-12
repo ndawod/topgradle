@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '3.8.8'
+final _current_version = '3.8.9'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -43,7 +43,7 @@ final _versions = [
     // Plugins.
     plugin_detekt               : _detekt_version,
     plugin_kotlin               : _kotlin_version,
-    plugin_versions_outdated    : '0.48.0',
+    plugin_versions_outdated    : '0.49.0',
     plugin_shadow               : '6.1.0',
 
     // Dependencies.
@@ -59,20 +59,20 @@ final _versions = [
     b_c_jose4j                  : '0.9.3',
     caffeine_cache              : '3.1.8',
     checker_compat_qual         : '2.5.5',
-    checker_qual                : '3.38.0',
+    checker_qual                : '3.39.0',
     commons_codec               : '1.15',
     commons_io                  : '2.11.0',
-    dagger                      : '2.48',
+    dagger                      : '2.48.1',
     jcolor                      : '5.5.1',
     firebase_admin              : '9.2.0',
     freemarker                  : '2.3.32',
     google_api_client           : '2.2.0',
-    google_api_common           : '2.17.1',
+    google_api_common           : '2.18.0',
     google_auto_value           : '1.10.4',
     google_errorprone           : '2.22.0',
     google_findbugs             : '3.0.2',
     google_gson                 : '2.10.1',
-    google_guava                : '32.1.2-jre',
+    google_guava                : '32.1.3-jre',
     google_httpclient           : '1.43.3',
     google_j2objc               : '2.8',
     google_ksp                  : '1.8.21-1.0.11',
@@ -95,14 +95,14 @@ final _versions = [
     kotlin_datetime             : '0.4.1',
     kotlin_reflect              : _kotlin_version,
     kotlin_serialization        : '1.6.0',
-    ktor                        : '2.3.4',
+    ktor                        : '2.3.5',
     logback_classic             : '1.4.11',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '3.5.11',
-    ndawod_kotlin_orm           : '4.10.6',
-    ndawod_kotlin_restful       : '4.4.12',
-    networknt_core              : '2.1.26',
+    ndawod_kotlin_core          : '3.5.12',
+    ndawod_kotlin_orm           : '4.10.7',
+    ndawod_kotlin_restful       : '4.4.14',
+    networknt_core              : '2.1.27',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
     ormlite_jdbc                : _ormlite_version,
@@ -110,7 +110,7 @@ final _versions = [
     pac4j                       : '5.1.5',
     sentry                      : '6.29.0',
     seruco_base62               : '0.1.3',
-    simplemail                  : '8.1.3',
+    simplemail                  : '8.3.1',
     slf4j_api                   : '2.0.9',
     slf4j_ext                   : '2.0.9',
     snakeyaml                   : '2.2',
@@ -120,7 +120,7 @@ final _versions = [
     squareup_okio               : '3.6.0',
     swagger_annotations         : '2.0.0-rc2',
     trbl_blurhash               : '1.0.0',
-    undertow                    : '2.3.8.Final',
+    undertow                    : '2.3.9.Final',
     wildfly                     : '1.6.0.Final',
     zxcvbn                      : '1.8.2',
 ]
