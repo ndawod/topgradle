@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '3.8.9'
+final _current_version = '3.8.10'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -122,6 +122,7 @@ final _versions = [
     trbl_blurhash               : '1.0.0',
     undertow                    : '2.3.9.Final',
     wildfly                     : '1.6.0.Final',
+    yuicompressor               : '2.4.8',
     zxcvbn                      : '1.8.2',
 ]
 
@@ -248,6 +249,7 @@ final _implOverrides = [
     'com.squareup.okhttp3:okhttp'                                               : _versions.squareup_okhttp3,
     'com.squareup.okio:okio'                                                    : _versions.squareup_okio,
     'com.sun.mail:jakarta.mail'                                                 : _versions.jakarta_mail,
+    'com.yahoo.platform.yui:yuicompressor'                                      : _versions.yuicompressor,
     'commons-codec:commons-codec'                                               : _versions.commons_codec,
     'commons-io:commons-io'                                                     : _versions.commons_io,
     'io.moquette:moquette-broker'                                               : _versions.moquette,
