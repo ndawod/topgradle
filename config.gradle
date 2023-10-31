@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '3.9.0'
+final _current_version = '3.9.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -240,6 +240,7 @@ final _implOverrides = [
     'com.networknt:exception'                                                   : _versions.networknt_core,
     'com.networknt:handler'                                                     : _versions.networknt_core,
     'com.networknt:info'                                                        : _versions.networknt_core,
+    'com.networknt:monad-result'                                                : _versions.networknt_core,
     'com.networknt:security'                                                    : _versions.networknt_core,
     'com.networknt:server'                                                      : _versions.networknt_core,
     'com.networknt:status'                                                      : _versions.networknt_core,
