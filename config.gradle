@@ -29,7 +29,8 @@ final _current_version = '3.9.1'
 // https://kotlinlang.org/docs/releases.html#release-details
 final _kotlin_version = '1.8.21'
 final _detekt_version = '1.23.3'
-final _ktlint_version = '11.6.1'
+final _ktlint_plugin_version = '11.6.1'
+final _ktlint_version = '0.51.0-FINAL'
 
 // The version of OrmLite.
 final _ormlite_version = '6.1'
@@ -44,7 +45,7 @@ final _versions = [
     // Plugins.
     plugin_kotlin               : _kotlin_version,
     plugin_detekt               : _detekt_version,
-    plugin_ktlint               : _ktlint_version,
+    plugin_ktlint               : _ktlint_plugin_version,
     plugin_versions_outdated    : '0.49.0',
     plugin_shadow               : '6.1.0',
 
@@ -97,11 +98,14 @@ final _versions = [
     kotlin_datetime             : '0.4.1',
     kotlin_reflect              : _kotlin_version,
     kotlin_serialization        : '1.6.0',
+    ktlint                      : _ktlint_version,
+    ktlint_reporter             : _ktlint_version,
+    ktlint_ruleset              : '1.0.1',
     ktor                        : '2.3.5',
     logback_classic             : '1.4.11',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '3.5.12',
+    ndawod_kotlin_core          : '3.6.0',
     ndawod_kotlin_orm           : '4.10.7',
     ndawod_kotlin_restful       : '4.4.14',
     networknt_core              : '2.1.28',
@@ -247,6 +251,9 @@ final _implOverrides = [
     'com.networknt:utility'                                                     : _versions.networknt_core,
     'com.networknt:validator'                                                   : _versions.networknt_validator,
     'com.nulab-inc:zxcvbn'                                                      : _versions.zxcvbn,
+    'com.pinterest:ktlint'                                                      : _versions.ktlint,
+    'com.pinterest.ktlint:ktlint-reporter-baseline'                             : _versions.ktlint_reporter,
+    'com.pinterest.ktlint:ktlint-ruleset-standard'                              : _versions.ktlint_ruleset,
     'com.sanctionco.jmail:jmail'                                                : _versions.jmail,
     'com.squareup.moshi:moshi-adapters'                                         : _versions.squareup_moshi,
     'com.squareup.moshi:moshi-kotlin'                                           : _versions.squareup_moshi,
