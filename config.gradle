@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '3.10.4'
+final _current_version = '3.10.5'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -75,6 +75,7 @@ final _versions = [
     google_findbugs             : '3.0.2',
     google_gson                 : '2.10.1',
     google_guava                : '33.0.0-jre',
+    google_guava_failureaccess  : '1.0.2',
     google_httpclient           : '1.43.3',
     google_j2objc               : '2.8',
     google_ksp                  : '1.8.21-1.0.11',
@@ -221,6 +222,7 @@ final _implOverrides = [
     'com.google.errorprone:error_prone_annotations'                             : _versions.google_errorprone,
     'com.google.firebase:firebase-admin'                                        : _versions.firebase_admin,
     'com.google.guava:guava'                                                    : _versions.google_guava,
+    'com.google.guava:failureaccess'                                            : _versions.google_guava_failureaccess,
     'com.google.http-client:google-http-client'                                 : _versions.google_httpclient,
     'com.google.http-client:google-http-client-apache-v2'                       : _versions.google_httpclient,
     'com.google.http-client:google-http-client-gson'                            : _versions.google_httpclient,
@@ -236,6 +238,8 @@ final _implOverrides = [
     'com.networknt:audit'                                                       : _versions.networknt_core,
     'com.networknt:body'                                                        : _versions.networknt_core,
     'com.networknt:client'                                                      : _versions.networknt_core,
+    'com.networknt:client-config'                                               : _versions.networknt_core,
+    'com.networknt:cluster'                                                     : _versions.networknt_core,
     'com.networknt:config'                                                      : _versions.networknt_core,
     'com.networknt:exception'                                                   : _versions.networknt_core,
     'com.networknt:handler'                                                     : _versions.networknt_core,
