@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '3.11.3'
+final _current_version = '3.11.4'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -65,6 +65,7 @@ final _versions = [
     commons_codec               : '1.15',
     commons_io                  : '2.11.0',
     dagger                      : '2.51',
+    dotenv                      : '6.4.1',
     jcolor                      : '5.5.1',
     firebase_admin              : '9.2.0',
     freemarker                  : '2.3.32',
@@ -102,9 +103,9 @@ final _versions = [
     logback_classic             : '1.5.1',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '3.6.5',
-    ndawod_kotlin_orm           : '4.12.0',
-    ndawod_kotlin_restful       : '4.5.9',
+    ndawod_kotlin_core          : '3.6.6',
+    ndawod_kotlin_orm           : '4.12.1',
+    ndawod_kotlin_restful       : '4.5.10',
     networknt_core              : '2.1.32',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
@@ -261,6 +262,7 @@ final _implOverrides = [
     'commons-codec:commons-codec'                                               : _versions.commons_codec,
     'commons-io:commons-io'                                                     : _versions.commons_io,
     'io.moquette:moquette-broker'                                               : _versions.moquette,
+    'io.github.cdimascio:dotenv-kotlin'                                         : _versions.dotenv,
     'io.grpc:grpc-context'                                                      : _versions.io_grpc,
     'io.ktor:ktor-client-cio'                                                   : _versions.ktor,
     'io.ktor:ktor-client-core'                                                  : _versions.ktor,

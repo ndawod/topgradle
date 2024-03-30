@@ -23,32 +23,36 @@
  */
 
 allprojects {
-    if (null != gradle.overrides && !gradle.overrides.isEmpty()) {
-        configurations.all {
+    final overrides = gradle.overrides
+    if (null == overrides || overrides.isEmpty()) {
+        return
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            failOnVersionConflict()
+            preferProjectModules()
+
             resolutionStrategy {
-                failOnVersionConflict()
-                preferProjectModules()
+                def conflictingVersions = [:]
 
-                resolutionStrategy {
-                    def conflictingVersions = [:]
+                eachDependency { DependencyResolveDetails details ->
+                    final requested = details.requested
+                    final String module = requested.module.toString()
+                    final String moduleVersion = requested.version
+                    final String forcedVersion = overrides[module]
 
-                    eachDependency { DependencyResolveDetails details ->
-                        final module = details.requested.module.toString()
-                        final moduleVersion = details.requested.version
-                        final forcedVersion = gradle.overrides[module]
-
-                        if (null == forcedVersion) {
-                            def otherVersion = conflictingVersions[module]
-                            if ('+' != moduleVersion && null == otherVersion) {
-                                conflictingVersions[module] = moduleVersion
-                            } else if ('+' != moduleVersion && otherVersion != moduleVersion) {
-                                System.out.println("POSSIBLE CONFLICTING VERSION FOR '$module'")
-                                System.out.println("- VERSION 1: $otherVersion")
-                                System.out.println("- VERSION 2: $moduleVersion")
-                            }
-                        } else if ('+' != moduleVersion && forcedVersion != moduleVersion) {
-                            force "$module:$forcedVersion"
+                    if (null == forcedVersion) {
+                        def otherVersion = conflictingVersions[module]
+                        if ('+' != moduleVersion && null == otherVersion) {
+                            conflictingVersions[module] = moduleVersion
+                        } else if ('+' != moduleVersion && otherVersion != moduleVersion) {
+                            System.out.println("POSSIBLE CONFLICTING VERSION FOR '$module'")
+                            System.out.println("- VERSION 1: $otherVersion")
+                            System.out.println("- VERSION 2: $moduleVersion")
                         }
+                    } else if ('+' != moduleVersion && forcedVersion != moduleVersion) {
+                        force "$module:$forcedVersion"
                     }
                 }
             }

@@ -23,7 +23,7 @@
  */
 
 rootProject.group = 'org.noordawod'
-rootProject.version = '3.11.3'
+rootProject.version = '3.11.4'
 rootProject.description = 'A collection of Gradle configuration files and scripts.'
 rootProject.buildDir = 'build'
 
