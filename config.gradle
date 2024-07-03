@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.0.0'
+final _current_version = '4.0.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -302,8 +302,17 @@ final _implOverrides = [
     'org.jetbrains.kotlinx:kotlinx-datetime'                                    : _versions.kotlin_datetime,
     'org.jetbrains.kotlinx:kotlinx-serialization-core'                          : _versions.kotlin_serialization,
     'org.jetbrains.kotlinx:kotlinx-serialization-core-jvm'                      : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-bom'                           : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-cbor'                          : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-cbor-jvm'                      : _versions.kotlin_serialization,
     'org.jetbrains.kotlinx:kotlinx-serialization-json'                          : _versions.kotlin_serialization,
     'org.jetbrains.kotlinx:kotlinx-serialization-json-jvm'                      : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-json-okio'                     : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-json-okio-jvm'                 : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-properties'                    : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-properties-jvm'                : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-protobuf'                      : _versions.kotlin_serialization,
+    'org.jetbrains.kotlinx:kotlinx-serialization-protobuf-jvm'                  : _versions.kotlin_serialization,
     'org.owasp.encoder:encoder'                                                 : _versions.owasp_encoder,
     'org.pac4j:pac4j'                                                           : _versions.pac4j,
     'org.simplejavamail:simple-java-mail'                                       : _versions.simplemail,
