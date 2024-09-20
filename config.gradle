@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.3.4'
+final _current_version = '4.3.5'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -106,9 +106,9 @@ final _versions = [
     logback_classic             : '1.5.8',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '4.3.3',
-    ndawod_kotlin_orm           : '5.3.3',
-    ndawod_kotlin_restful       : '5.3.4',
+    ndawod_kotlin_core          : '4.3.4',
+    ndawod_kotlin_orm           : '5.3.4',
+    ndawod_kotlin_restful       : '5.3.5',
     networknt_core              : '2.1.36',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
