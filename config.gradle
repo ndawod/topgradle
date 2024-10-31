@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.4.1'
+final _current_version = '4.5.0'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -56,7 +56,7 @@ final _versions = [
     apache_commons_lang3        : '3.17.0',
     apache_httpclient           : '4.5.14',
     apache_httpclient_core      : '4.4.16',
-    apache_httpclient5          : '5.4',
+    apache_httpclient5          : '5.4.1',
     apache_imaging              : '1.0.0-alpha5',
     auth0_jwt                   : '4.4.0',
     b_c_jose4j                  : '0.9.6',
@@ -72,9 +72,9 @@ final _versions = [
     firebase_admin              : '9.4.1',
     freemarker                  : '2.3.33',
     google_api_client           : '2.7.0',
-    google_api_common           : '2.38.0',
+    google_api_common           : '2.40.0',
     google_auto_value           : '1.11.0',
-    google_errorprone           : '2.34.0',
+    google_errorprone           : '2.35.1',
     google_findbugs             : '3.0.2',
     google_gson                 : '2.11.0',
     google_guava                : '33.3.1-jre',
@@ -83,12 +83,12 @@ final _versions = [
     google_j2objc               : '3.0.0',
     google_ksp                  : '2.0.21-1.0.25', // https://github.com/google/ksp/releases
     google_oauth_client         : '1.36.0',
-    google_protobuf_java        : '4.28.2',
+    google_protobuf_java        : '4.29.0-RC2',
     htmlcompressor              : '1.5.2',
-    icu4j                       : '75.1',
-    io_grpc                     : '1.68.0',
+    icu4j                       : '76.1',
+    io_grpc                     : '1.68.1',
     io_opencensus_http          : '0.31.1',
-    jackson                     : '2.18.0',
+    jackson                     : '2.18.1',
     jakarta_mail                : '2.0.1',
     jboss_logging               : '3.6.1.Final',
     jboss_threads               : '3.8.0.Final',
@@ -96,7 +96,7 @@ final _versions = [
     jfreesvg                    : '3.4.3',
     jmail                       : '1.6.3',
     jsonpath                    : '2.9.0',
-    kaml                        : '0.61.0',
+    kaml                        : '0.62.1',
     kotlin                      : _kotlin_version,
     kotlin_annotations          : '26.0.1',
     kotlin_coroutines           : '1.9.0',
@@ -105,12 +105,12 @@ final _versions = [
     kotlin_serialization        : '1.7.3',
     ktlint_rules                : _ktlint_rules_version,
     ktor                        : '2.3.12',
-    logback_classic             : '1.5.11',
+    logback_classic             : '1.5.12',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '4.3.5',
-    ndawod_kotlin_orm           : '5.4.1',
-    ndawod_kotlin_restful       : '5.3.6',
+    ndawod_kotlin_core          : '4.3.6',
+    ndawod_kotlin_orm           : '5.4.2',
+    ndawod_kotlin_restful       : '5.4.0',
     networknt_core              : '2.1.37',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
