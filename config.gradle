@@ -47,7 +47,7 @@ final _versions = [
     plugin_detekt               : _detekt_version,
     plugin_ktlint               : _ktlint_version,
     plugin_versions_outdated    : '0.53.0',
-    plugin_shadow               : '6.1.0',
+    plugin_shadow               : '9.3.1',
 
     // Dependencies.
     aelstad_keccakj             : '1.1.0',
@@ -143,7 +143,7 @@ final _versions = [
 
 final _pluginOverrides = [
     'com.github.ben-manes:gradle-versions-plugin'                               : _versions.plugin_versions_outdated,
-    'com.github.jengelman.gradle.plugins:shadow'                                : _versions.plugin_shadow,
+    'com.gradleup.shadow:shadow-gradle-plugin'                                  : _versions.plugin_shadow,
     'org.jetbrains.kotlin:kotlin-gradle-plugin'                                 : _versions.plugin_kotlin,
     'org.jetbrains.kotlin:kotlin-serialization'                                 : _versions.plugin_kotlin,
     'io.gitlab.arturbosch.detekt:detekt-gradle-plugin'                          : _versions.plugin_detekt,
