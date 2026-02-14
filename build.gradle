@@ -23,9 +23,8 @@
  */
 
 rootProject.group = 'org.noordawod'
-rootProject.version = '4.9.1'
+rootProject.version = '4.9.2'
 rootProject.description = 'A collection of Gradle configuration files and scripts.'
-rootProject.buildDir = 'build'
 
 apply from: 'config.gradle'
 apply from: 'detekt.gradle'
