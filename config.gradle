@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.9.4'
+final _current_version = '4.9.5'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -47,10 +47,11 @@ final _versions = [
     plugin_detekt               : _detekt_version,
     plugin_ktlint               : _ktlint_version,
     plugin_versions_outdated    : '0.53.0',
-    plugin_shadow               : '9.3.1',
+    plugin_shadow               : '9.3.2',
 
     // Dependencies.
     aelstad_keccakj             : '1.1.0',
+    altcha                      : '1.3.0',
     animal_sniffer_annotations  : '1.27',
     apache_collections4         : '4.5.0',
     apache_commons_lang3        : '3.20.0',
@@ -69,12 +70,12 @@ final _versions = [
     dagger                      : '2.59.2',
     dotenv                      : '6.5.1',
     jcolor                      : '5.5.1',
-    firebase_admin              : '9.7.1',
+    firebase_admin              : '9.8.0',
     freemarker                  : '2.3.34',
-    google_api_client           : '2.8.1',
+    google_api_client           : '2.9.0',
     google_api_common           : '2.58.0',
     google_auto_value           : '1.11.1',
-    google_errorprone           : '2.47.0',
+    google_errorprone           : '2.48.0',
     google_findbugs             : '3.0.2',
     google_gson                 : '2.13.2',
     google_guava                : '33.5.0-jre',
@@ -83,7 +84,7 @@ final _versions = [
     google_j2objc               : '3.1',
     google_ksp                  : '2.2.21-2.0.4', // https://github.com/google/ksp/releases
     google_oauth_client         : '1.39.0',
-    google_protobuf_java        : '4.33.5',
+    google_protobuf_java        : '4.34.0',
     htmlcompressor              : '1.5.2',
     icu4j                       : '78.2',
     io_grpc                     : '1.79.0',
@@ -96,7 +97,7 @@ final _versions = [
     jedis                       : '7.3.0',
     jfreesvg                    : '3.4.4',
     jmail                       : '2.1.0',
-    jsonpath                    : '2.10.0',
+    jsonpath                    : '3.0.0',
     kaml                        : '0.104.0',
     kotlin                      : _kotlin_version,
     kotlin_annotations          : '26.1.0',
@@ -106,7 +107,7 @@ final _versions = [
     kotlin_serialization        : '1.9.0', // https://github.com/Kotlin/kotlinx.serialization/releases
     ktlint_rules                : _ktlint_rules_version,
     ktor                        : '3.4.0',
-    logback_classic             : '1.5.29',
+    logback_classic             : '1.5.32',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
     ndawod_kotlin_core          : '4.6.4',
@@ -125,12 +126,12 @@ final _versions = [
     simplemail                  : '8.12.6',
     slf4j_api                   : '2.0.17',
     slf4j_ext                   : '2.0.17',
-    snakeyaml                   : '2.5',
+    snakeyaml                   : '2.6',
     snakeyaml_engine            : '3.0.1',
     squareup_moshi              : '1.15.2',
     squareup_okhttp3            : '5.3.2',
     squareup_okio               : '3.16.4',
-    stripe_java                 : '31.3.0',
+    stripe_java                 : '31.4.0',
     swagger_annotations         : '2.0.0-rc2',
     trbl_blurhash               : '1.0.0',
     undertow                    : '2.3.23.Final',
@@ -330,6 +331,7 @@ final _implOverrides = [
     'com.microsoft.playwright:driver'                                           : _versions.playwright,
     'com.microsoft.playwright:driver-bundle'                                    : _versions.playwright,
     'com.microsoft.playwright:playwright'                                       : _versions.playwright,
+    'org.altcha:altcha'                                                         : _versions.altcha,
     'org.owasp.encoder:encoder'                                                 : _versions.owasp_encoder,
     'org.pac4j:pac4j'                                                           : _versions.pac4j,
     'org.simplejavamail:simple-java-mail'                                       : _versions.simplemail,
