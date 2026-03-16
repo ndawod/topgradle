@@ -23,13 +23,13 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.10.0'
+final _current_version = '4.10.1'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
-final _kotlin_version = '2.3.10'
+final _kotlin_version = '2.3.20'
 final _detekt_version = '1.23.8'
-final _ktlint_version = '14.0.1'
+final _ktlint_version = '14.2.0'
 final _ktlint_rules_version = '1.3.1'
 
 // The version of OrmLite.
@@ -47,7 +47,7 @@ final _versions = [
     plugin_detekt               : _detekt_version,
     plugin_ktlint               : _ktlint_version,
     plugin_versions_outdated    : '0.53.0',
-    plugin_shadow               : '9.3.2',
+    plugin_shadow               : '9.4.0',
 
     // Dependencies.
     aelstad_keccakj             : '1.1.0',
@@ -66,7 +66,7 @@ final _versions = [
     checker_qual                : '3.54.0',
     commons_codec               : '1.21.0',
     commons_io                  : '2.21.0',
-    commons_logging             : '1.3.5',
+    commons_logging             : '1.3.6',
     dagger                      : '2.59.2',
     dotenv                      : '6.5.1',
     jcolor                      : '5.5.1',
@@ -94,7 +94,7 @@ final _versions = [
     jakarta_mail                : '2.0.2',
     jboss_logging               : '3.6.2.Final',
     jboss_threads               : '3.9.2',
-    jedis                       : '7.3.0',
+    jedis                       : '7.4.0',
     jfreesvg                    : '3.4.4',
     jmail                       : '2.1.0',
     jsonpath                    : '3.0.0',
@@ -110,9 +110,9 @@ final _versions = [
     logback_classic             : '1.5.32',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '4.7.0',
-    ndawod_kotlin_orm           : '5.8.0',
-    ndawod_kotlin_restful       : '5.9.0',
+    ndawod_kotlin_core          : '4.7.1',
+    ndawod_kotlin_orm           : '5.8.1',
+    ndawod_kotlin_restful       : '5.9.1',
     networknt_core              : '2.3.3',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
@@ -120,8 +120,8 @@ final _versions = [
     owasp_encoder               : '1.4.0',
     pac4j                       : '5.1.5',
     playwright                  : '1.58.0',
-    pdfbox                      : '3.0.6',
-    sentry                      : '8.33.0',
+    pdfbox                      : '3.0.7',
+    sentry                      : '8.35.0',
     seruco_base62               : '0.1.3',
     simplemail                  : '8.12.6',
     slf4j_api                   : '2.0.17',
@@ -130,7 +130,7 @@ final _versions = [
     snakeyaml_engine            : '3.0.1',
     squareup_moshi              : '1.15.2',
     squareup_okhttp3            : '5.3.2',
-    squareup_okio               : '3.16.4',
+    squareup_okio               : '3.17.0',
     stripe_java                 : '31.4.0',
     swagger_annotations         : '2.0.0-rc2',
     trbl_blurhash               : '1.0.0',
