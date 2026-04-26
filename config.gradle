@@ -23,11 +23,11 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.10.2'
+final _current_version = '4.10.3'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
-final _kotlin_version = '2.3.20'
+final _kotlin_version = '2.3.21'
 final _detekt_version = '1.23.8'
 final _ktlint_version = '14.2.0'
 final _ktlint_rules_version = '1.3.1'
@@ -46,27 +46,27 @@ final _versions = [
     plugin_kotlin               : _kotlin_version,
     plugin_detekt               : _detekt_version,
     plugin_ktlint               : _ktlint_version,
-    plugin_versions_outdated    : '0.53.0',
+    plugin_versions_outdated    : '0.54.0',
     plugin_shadow               : '9.4.1',
 
     // Dependencies.
     aelstad_keccakj             : '1.1.0',
-    altcha                      : '1.3.0',
+    altcha                      : '2.0.1',
     animal_sniffer_annotations  : '1.27',
     apache_collections4         : '4.5.0',
     apache_commons_lang3        : '3.20.0',
     apache_httpclient           : '4.5.14',
     apache_httpclient_core      : '4.4.16',
-    apache_httpclient5          : '5.6',
+    apache_httpclient5          : '5.6.1',
     apache_imaging              : '1.0.0-alpha6',
     apache_tika                 : '3.3.0',
     auth0_jwt                   : '4.5.1',
     b_c_jose4j                  : '0.9.6',
     caffeine_cache              : '3.2.3',
     checker_compat_qual         : '2.5.6',
-    checker_qual                : '3.54.1',
-    commons_codec               : '1.21.0',
-    commons_io                  : '2.21.0',
+    checker_qual                : '4.0.0',
+    commons_codec               : '1.22.0',
+    commons_io                  : '2.22.0',
     commons_logging             : '1.3.6',
     dagger                      : '2.59.2',
     dotenv                      : '6.5.1',
@@ -74,16 +74,16 @@ final _versions = [
     firebase_admin              : '9.8.0',
     freemarker                  : '2.3.34',
     google_api_client           : '2.9.0',
-    google_api_common           : '2.59.0',
+    google_api_common           : '2.62.0',
     google_auto_value           : '1.11.1',
-    google_errorprone           : '2.48.0',
+    google_errorprone           : '2.49.0',
     google_findbugs             : '3.0.2',
-    google_gson                 : '2.13.2',
-    google_guava                : '33.5.0-jre',
+    google_gson                 : '2.14.0',
+    google_guava                : '33.6.0-jre',
     google_guava_failureaccess  : '1.0.3',
     google_httpclient           : '2.1.0',
     google_j2objc               : '3.1',
-    google_ksp                  : '2.3.6', // https://github.com/google/ksp/releases
+    google_ksp                  : '2.3.7', // https://github.com/google/ksp/releases
     google_oauth_client         : '1.39.0',
     google_protobuf_java        : '4.34.1',
     htmlcompressor              : '1.5.2',
@@ -105,24 +105,24 @@ final _versions = [
     kotlin_coroutines           : '1.10.2', // https://github.com/Kotlin/kotlinx.coroutines/releases
     kotlin_datetime             : '0.7.1',
     kotlin_reflect              : _kotlin_version,
-    kotlin_serialization        : '1.10.0', // https://github.com/Kotlin/kotlinx.serialization/releases
+    kotlin_serialization        : '1.11.0', // https://github.com/Kotlin/kotlinx.serialization/releases
     ktlint_rules                : _ktlint_rules_version,
-    ktor                        : '3.4.2',
+    ktor                        : '3.4.3',
     logback_classic             : '1.5.32',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '4.7.2',
-    ndawod_kotlin_orm           : '5.8.2',
-    ndawod_kotlin_restful       : '5.9.2',
+    ndawod_kotlin_core          : '4.7.3',
+    ndawod_kotlin_orm           : '5.8.3',
+    ndawod_kotlin_restful       : '5.9.3',
     networknt_core              : '2.3.3',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
     ormlite_jdbc                : _ormlite_version,
     owasp_encoder               : '1.4.0',
     pac4j                       : '5.1.5',
-    playwright                  : '1.58.0',
+    playwright                  : '1.59.0',
     pdfbox                      : '3.0.7',
-    sentry                      : '8.37.1',
+    sentry                      : '8.40.0',
     seruco_base62               : '0.1.3',
     simplemail                  : '8.12.6',
     slf4j_api                   : '2.0.17',
@@ -132,7 +132,7 @@ final _versions = [
     squareup_moshi              : '1.15.2',
     squareup_okhttp3            : '5.3.2',
     squareup_okio               : '3.17.0',
-    stripe_java                 : '32.0.0',
+    stripe_java                 : '32.1.0',
     swagger_annotations         : '2.0.0-rc2',
     trbl_blurhash               : '1.0.0',
     undertow                    : '2.3.23.Final',
