@@ -22,53 +22,21 @@
  * SOFTWARE.
  */
 
-rootProject.group = 'org.noordawod'
-rootProject.version = '4.11.3'
-rootProject.description = 'A collection of Gradle configuration files and scripts.'
+/*
+ * You should add the following to your buildscript's dependencies in build.gradle:
+ *
+ * dependencies {
+ *   classpath "org.jetbrains.kotlin:kotlin-metadata-jvm:${versions.plugin_kotlin}"
+ * }
+ */
 
-apply from: 'config.gradle'
-apply from: 'detekt.gradle'
-apply from: 'ktlint.gradle'
+apply plugin: 'kotlin-kapt'
 
-apply plugin: 'java'
-apply plugin: 'com.github.ben-manes.versions'
-
-repositories {
-    mavenCentral()
-    google()
-    gradlePluginPortal()
-    maven {
-        url 'https://jitpack.io'
-    }
-    maven {
-        url 'https://plugins.gradle.org/m2/'
-    }
-}
-
-buildscript {
-    apply from: 'config.gradle'
-
-    repositories {
-        mavenCentral()
-        google()
-        gradlePluginPortal()
-        maven {
-            url 'https://jitpack.io'
-        }
-        maven {
-            url 'https://plugins.gradle.org/m2/'
-        }
-    }
-
-    dependencies {
-        classpaths.each {
-            project.buildscript.dependencies.add('classpath', "${it.key}:${it.value}")
-        }
-    }
+// Annotation processors discovery from compile classpath is deprecated.
+kapt {
+    includeCompileClasspath = false
 }
 
 dependencies {
-    overrides.each {
-        project.dependencies.add('implementation', "${it.key}:${it.value}")
-    }
+    kapt "org.jetbrains.kotlin:kotlin-metadata-jvm:${versions.plugin_kotlin}"
 }
