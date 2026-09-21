@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.13.2'
+final _current_version = '4.14.0'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -62,7 +62,7 @@ final _versions = [
     apache_tika                 : '4.0.0',
     auth0_jwt                   : '4.6.1',
     b_c_jose4j                  : '0.9.7',
-    caffeine_cache              : '3.3.0',
+    caffeine_cache              : '3.2.4',
     checker_compat_qual         : '2.5.6',
     checker_qual                : '4.2.3',
     commons_codec               : '1.22.1',
@@ -144,7 +144,7 @@ final _versions = [
 ]
 
 final _pluginOverrides = [
-    'com.github.ben-manes:gradle-versions-plugin'                               : _versions.plugin_versions_outdated,
+    'io.github.ben-manes:gradle-versions-plugin'                                : _versions.plugin_versions_outdated,
     'com.gradleup.shadow:shadow-gradle-plugin'                                  : _versions.plugin_shadow,
     'org.jetbrains.kotlin:kotlin-gradle-plugin'                                 : _versions.plugin_kotlin,
     'org.jetbrains.kotlin:kotlin-serialization'                                 : _versions.plugin_kotlin,
@@ -219,7 +219,6 @@ final _implOverrides = [
     'com.fasterxml.jackson.module:jackson-module-scala_2.13'                    : _versions.jackson,
     'com.fasterxml.jackson.module:jackson-module-scala_3'                       : _versions.jackson,
     'com.github.aelstad:keccakj'                                                : _versions.aelstad_keccakj,
-    'com.github.ben-manes.caffeine:caffeine'                                    : _versions.caffeine_cache,
     'com.github.ndawod:kotlin-core'                                             : _versions.ndawod_kotlin_core,
     'com.github.ndawod:kotlin-orm'                                              : _versions.ndawod_kotlin_orm,
     'com.github.ndawod:kotlin-restful'                                          : _versions.ndawod_kotlin_restful,
@@ -277,6 +276,7 @@ final _implOverrides = [
     'commons-io:commons-io'                                                     : _versions.commons_io,
     'commons-logging:commons-logging'                                           : _versions.commons_logging,
     'io.moquette:moquette-broker'                                               : _versions.moquette,
+    'io.github.ben-manes.caffeine:caffeine'                                     : _versions.caffeine_cache,
     'io.github.cdimascio:dotenv-kotlin'                                         : _versions.dotenv,
     'io.github.pdvrieze.xmlutil:core'                                           : _versions.xmlutil_pdvrieze,
     'io.github.pdvrieze.xmlutil:core-jdk'                                       : _versions.xmlutil_pdvrieze,
