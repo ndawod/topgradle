@@ -46,6 +46,11 @@ if (null == project.versions || null == project.versions.jdk) {
                 jvmTarget = _kotlinVersion
             }
         }
+
+        compilerOptions {
+            // Disable warnings about `DestructuringDeclaration` rule.
+            freeCompilerArgs.add("-Xname-based-destructuring=only-syntax")
+        }
     }
 
     dependencies {
