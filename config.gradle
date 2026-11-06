@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.15.3'
+final _current_version = '4.15.4'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -52,7 +52,7 @@ final _versions = [
     // Dependencies.
     aelstad_keccakj             : '1.1.0',
     altcha                      : '2.0.3', // DO NOT BUMP BECAUSE 2.1.* USES NEW API!!!
-    animal_sniffer_annotations  : '1.28',
+    animal_sniffer_annotations  : '1.29',
     apache_collections4         : '4.6.0',
     apache_commons_lang3        : '3.21.0',
     apache_httpclient           : '4.5.14',
@@ -64,7 +64,7 @@ final _versions = [
     b_c_jose4j                  : '0.9.7',
     caffeine_cache              : '3.3.1',
     checker_compat_qual         : '2.5.6',
-    checker_qual                : '4.3.1',
+    checker_qual                : '4.4.0',
     commons_codec               : '1.23.0',
     commons_io                  : '2.22.0',
     commons_logging             : '1.4.0',
@@ -74,12 +74,12 @@ final _versions = [
     firebase_admin              : '9.11.0',
     freemarker                  : '2.3.35',
     google_api_client           : '2.9.2',
-    google_api_common           : '2.71.0',
+    google_api_common           : '2.72.0',
     google_auto_value           : '1.11.1',
     google_errorprone           : '2.52.0',
     google_findbugs             : '3.0.2',
     google_gson                 : '2.15.0',
-    google_guava                : '33.7.2-jre',
+    google_guava                : '33.8.0-jre',
     google_guava_failureaccess  : '1.0.3',
     google_httpclient           : '2.2.0',
     google_j2objc               : '3.1',
@@ -111,10 +111,10 @@ final _versions = [
     logback_classic             : '1.6.6',
     moquette                    : '0.17',
     mysql                       : '8.0.33',
-    ndawod_kotlin_core          : '4.10.1',
-    ndawod_kotlin_orm           : '5.11.1',
-    ndawod_kotlin_restful       : '5.12.3',
-    networknt_core              : '2.4.1',
+    ndawod_kotlin_core          : '4.10.2',
+    ndawod_kotlin_orm           : '5.11.2',
+    ndawod_kotlin_restful       : '5.12.4',
+    networknt_core              : '2.5.0',
     networknt_validator         : '1.1.8',
     ormlite_core                : _ormlite_version,
     ormlite_jdbc                : _ormlite_version,
@@ -122,7 +122,7 @@ final _versions = [
     pac4j                       : '5.1.5',
     playwright                  : '1.64.0',
     pdfbox                      : '3.0.8',
-    sentry                      : '8.62.0',
+    sentry                      : '8.63.0',
     seruco_base62               : '0.1.3',
     simplemail                  : '9.3.9',
     slf4j_api                   : '2.0.20',
