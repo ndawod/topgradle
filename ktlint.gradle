@@ -29,6 +29,11 @@ ktlint {
     outputToConsole = true
     enableExperimentalRules = true
 
+    // Set the version explicitly in case the latest ktlint-gradle plugin
+    // still uses an older parser that doesn't support the latest Kotlin
+    // language features.
+    version = versions.ktlint_rules
+
     filter {
         exclude('**/build/**')
         exclude('**/gen/**')
