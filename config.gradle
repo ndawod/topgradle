@@ -23,7 +23,7 @@
  */
 
 // The version of this module. Keep it the same value as in build.gradle.
-final _current_version = '4.17.1'
+final _current_version = '4.17.2'
 
 // Find the right versions of Kotlin and associated module here:
 // https://kotlinlang.org/docs/releases.html#release-details
@@ -311,6 +311,7 @@ final _implOverrides = [
     'org.jboss.logging:jboss-logging'                                           : _versions.jboss_logging,
     'org.jboss.threads:jboss-threads'                                           : _versions.jboss_threads,
     'org.jetbrains:annotations'                                                 : _versions.kotlin_annotations,
+    'org.jetbrains.kotlin:kotlin-metadata-jvm'                                  : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-reflect'                                       : _versions.kotlin_reflect,
     'org.jetbrains.kotlin:kotlin-stdlib'                                        : _versions.kotlin,
     'org.jetbrains.kotlin:kotlin-stdlib-common'                                 : _versions.kotlin,

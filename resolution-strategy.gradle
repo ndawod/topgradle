@@ -28,11 +28,13 @@ allprojects {
         return
     }
 
-    configurations.all {
+    //noinspection ForeignDelegate
+    configurations.configureEach {
         resolutionStrategy {
             failOnVersionConflict()
             preferProjectModules()
 
+            //noinspection ForeignDelegate
             resolutionStrategy {
                 def conflictingVersions = [:]
 
@@ -47,11 +49,13 @@ allprojects {
                         if ('+' != moduleVersion && null == otherVersion) {
                             conflictingVersions[module] = moduleVersion
                         } else if ('+' != moduleVersion && otherVersion != moduleVersion) {
-                            System.out.println("POSSIBLE CONFLICTING VERSION FOR '$module'")
-                            System.out.println("- VERSION 1: $otherVersion")
-                            System.out.println("- VERSION 2: $moduleVersion")
+                            System.out.println(
+                                "POSSIBLE CONFLICTING VERSION FOR '$module': " +
+                                    "$otherVersion ≠ $moduleVersion"
+                            )
                         }
                     } else if ('+' != moduleVersion && forcedVersion != moduleVersion) {
+                        //noinspection ForeignDelegate
                         force "$module:$forcedVersion"
                     }
                 }
